@@ -36,31 +36,36 @@
 // IMG_MAT04_03
 #define RID_IMG_MAT04_03 (RID_IMG_MAT04_02+0)
 #define RID_ENEMY_S0 RID_IMG_MAT04_03
-#define RID_ENEMY_S0_NUM 16
+#define RID_ENEMY_S0_NUM 2
 #define RID_ENEMY_S1 (RID_ENEMY_S0+RID_ENEMY_S0_NUM)
-#define RID_ENEMY_S1_NUM 16
+#define RID_ENEMY_S1_NUM 2
 #define RID_ENEMY_S2 (RID_ENEMY_S1+RID_ENEMY_S1_NUM)
-#define RID_ENEMY_S2_NUM 16
+#define RID_ENEMY_S2_NUM 2
 #define RID_ENEMY_S3 (RID_ENEMY_S2+RID_ENEMY_S2_NUM)
-#define RID_ENEMY_S3_NUM 16
+#define RID_ENEMY_S3_NUM 2
 #define RID_ENEMY_S4 (RID_ENEMY_S3+RID_ENEMY_S3_NUM)
-#define RID_ENEMY_S4_NUM 16
+#define RID_ENEMY_S4_NUM 2
 #define RID_ENEMY_M0 (RID_ENEMY_S4+RID_ENEMY_S4_NUM)
-#define RID_ENEMY_M0_NUM 16
+#define RID_ENEMY_M0_NUM 2
 #define RID_ENEMY_M1 (RID_ENEMY_M0+RID_ENEMY_M0_NUM)
-#define RID_ENEMY_M1_NUM 16
+#define RID_ENEMY_M1_NUM 2
 #define RID_ENEMY_L0 (RID_ENEMY_M1+RID_ENEMY_M1_NUM)
-#define RID_ENEMY_L0_NUM 16
+#define RID_ENEMY_L0_NUM 2
 #define RID_ENEMY_L1 (RID_ENEMY_L0+RID_ENEMY_L0_NUM)
-#define RID_ENEMY_L1_NUM 16
+#define RID_ENEMY_L1_NUM 2
 #define RID_ENEMY_BOSS (RID_ENEMY_L1+RID_ENEMY_L1_NUM)
-#define RID_ENEMY_BOSS_NUM 16
+#define RID_ENEMY_BOSS_NUM 2
 #define RID_MISSILE (RID_ENEMY_BOSS+RID_ENEMY_BOSS_NUM)
 #define RID_MISSILE_NUM 16
 #define RID_MISSILE_BREAK (RID_MISSILE+RID_MISSILE_NUM)
-#define RID_MISSILE_BREAK_NUM 16
+#define RID_MISSILE_BREAK_NUM 1
 
-#define RID_個数 (RID_MISSILE_BREAK+RID_MISSILE_BREAK_NUM)
+// IMG_MAT04_04
+#define RID_IMG_MAT04_04 (RID_MISSILE_BREAK+RID_MISSILE_BREAK_NUM)
+#define RID_BG RID_IMG_MAT04_04
+#define RID_BG_NUM 1
+
+#define RID_個数 (RID_BG+RID_BG_NUM)
 
 namespace エンジン {
 	
@@ -95,6 +100,8 @@ namespace エンジン {
 
 		void 描画_左上(unsigned int リソースID, int x, int y);
 		void 描画(unsigned int リソースID, int x, int y);
+
+		void 描画_リサイズ(unsigned int リソースID, int x, int y, float サイズ);
 	};
 
 	class リソース_ローダー

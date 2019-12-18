@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
+    <Filter Include="Source Files\オリジナル">
+      <UniqueIdentifier>{a52fdd41-de30-409f-bef6-45fa4e7b97f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\オリジナル">
+      <UniqueIdentifier>{4f3a34f0-11ac-49ee-844e-5d398469ffb5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,6 +42,12 @@
     <ClCompile Include="サービス・弾丸.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="エフェクト.cpp">
+      <Filter>Source Files\オリジナル</Filter>
+    </ClCompile>
+    <ClCompile Include="背景.cpp">
+      <Filter>Source Files\オリジナル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="エンジン.h">
@@ -55,6 +67,12 @@
     </ClInclude>
     <ClInclude Include="サービス・弾丸.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="エフェクト.h">
+      <Filter>Header Files\オリジナル</Filter>
+    </ClInclude>
+    <ClInclude Include="背景.h">
+      <Filter>Header Files\オリジナル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

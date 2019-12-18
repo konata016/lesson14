@@ -135,20 +135,24 @@
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
+    <ClCompile Include="エフェクト.cpp" />
     <ClCompile Include="エンジン.cpp" />
     <ClCompile Include="エンティティ.cpp" />
     <ClCompile Include="サービス・レンダリング.cpp" />
     <ClCompile Include="サービス・入力.cpp" />
     <ClCompile Include="サービス・弾丸.cpp" />
     <ClCompile Include="具象エンティティ.cpp" />
+    <ClCompile Include="背景.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="エフェクト.h" />
     <ClInclude Include="エンジン.h" />
     <ClInclude Include="エンティティ.h" />
     <ClInclude Include="サービス・レンダリング.h" />
     <ClInclude Include="サービス・入力.h" />
     <ClInclude Include="サービス・弾丸.h" />
     <ClInclude Include="共通.h" />
+    <ClInclude Include="背景.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
